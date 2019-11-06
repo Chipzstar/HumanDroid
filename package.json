@@ -14,7 +14,7 @@
     "@expo/vector-icons": "^10.0.3",
     "@react-navigation/web": "^1.0.0-alpha.9",
     "expo": "^34.0.1",
-    "expo-asset": "^6.0.0",
+    "expo-asset": "6.0.0",
     "expo-constants": "6.0.0",
     "expo-font": "~6.0.0",
     "expo-web-browser": "6.0.0",
@@ -26,7 +26,7 @@
     "react-native-reanimated": "~1.1.0",
     "react-native-screens": "1.0.0-alpha.22",
     "react-native-tensorflow-lite": "^1.0.6",
-    "react-native-unimodules": "~0.5.2",
+    "react-native-unimodules": "^0.5.4",
     "react-native-web": "^0.11.4",
     "react-navigation": "^3.11.0"
   },

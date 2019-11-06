@@ -1,6 +1,12 @@
 import {TFLiteImageRecognition} from 'react-native-tensorflow-lite';
 import React, {Component} from "react";
 import {Text, View, StyleSheet} from "react-native";
+import {Asset} from "expo-asset";
+
+//Assets
+import Anna from '../../assets/images/anna.jpg';
+import Model from '../../android/app/src/main/assets/model.tflite';
+import Labels from '../../android/app/src/main/assets/labels.txt';
 
 class MyImageClassifier extends Component {
 
@@ -10,23 +16,30 @@ class MyImageClassifier extends Component {
 
         try {
             // Initialize TensorFlow Lite Image Recognizer
-            this.classifier = new TFLiteImageRecognition({
-                model: "/android/app/src/main/assets/model.tflite",  // Your tflite model in assets folder.
-                labels: "/android/app/src/main/assets/labels.txt" // Your label file
+            this.tfLiteImageRecognition = new TFLiteImageRecognition({
+                model: Asset.fromModule(Model).downloadAsync(),  // Your tflite model in assets folder.
+                labels: Asset.fromModule(Labels).downloadAsync()// Your label file
             })
-        } catch(err) {
+        } catch (err) {
             alert(err)
         }
     }
 
+    /*init (callback) {
+        // do something async and call the callback:
+        callback.bind(this)();
+    }*/
+
     componentWillMount() {
-        this.classifyImage("/assets/images/anna.jpg") // Your image path.
+        let imagePath = Asset.fromModule(require("../../assets/images/anna.jpg"));
+        console.warn(imagePath);
+        this.classifyImage().then(console.log("Image Classified!"));
     }
 
-    async classifyImage(imagePath) {
+    async classifyImage() {
         try {
-            const results = await this.classifier.recognize({
-                image: (imagePath), // Your image path.
+            const results = await this.tfLiteImageRecognition.recognize({
+                image: Asset.fromModule(Anna).downloadAsync(),  // Your image path.
                 inputShape: (50, 50, 1), // the input shape of your model. If none given, it will be default to 224.
             });
 
@@ -37,13 +50,13 @@ class MyImageClassifier extends Component {
             };
             this.setState(resultObj)
 
-        } catch(err) {
+        } catch (err) {
             alert(err)
         }
     }
 
     componentWillUnmount() {
-        this.classifier.close() // Must close the classifier when destroying or unmounting component to release object.
+        this.tfLiteImageRecognition.close() // Must close the classifier when destroying or unmounting component to release object.
     }
 
     render() {

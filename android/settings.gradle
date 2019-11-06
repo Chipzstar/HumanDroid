@@ -1,4 +1,5 @@
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
+includeUnimodulesProjects()
 include ':react-native-tensorflow-lite'
 project(':react-native-tensorflow-lite').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tensorflow-lite/android')
 include ':react-native-screens'
