@@ -12,23 +12,20 @@ import {
     Component,
     ImageBackground
 } from 'react-native';
-
-
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function HomeScreen() {
     return (
-        <View style={styles.container}>
-            <ImageBackground
-                source={require('../../ProjectX/assets/images/greenBackground.png')}
-                style={{width: '100%', height: '100%'}}>
+            <LinearGradient
+                colors={["#5271ff", "#192f6a"]}
+                style={{flex: 1, alignItems: 'center',justifyContent: 'center',  borderRadius: 5}}>
                 <TouchableOpacity>
                     <Image
-                        style={{width: 250, height: 250}}
+                        style={{width: 250, height: 250, }}
                         source={require('../../ProjectX/assets/images/UploadButton.png')}
                     />
                 </TouchableOpacity>
-            </ImageBackground>
-        </View>
+            </LinearGradient>
     );
 }
 
@@ -46,5 +43,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
+    },
+    gradient: {
+        padding: 15,
+        alignItems: 'center',
+        borderRadius: 5
     }
 });

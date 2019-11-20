@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81236e95-dd91-45dd-8a1b-05b81ec756cd" name="Default Changelist" comment="" />
+    <list default="true" id="81236e95-dd91-45dd-8a1b-05b81ec756cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/model.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/projectx/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/projectx/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppComponents/MyImageClassifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-cli.config.js" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +27,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Qe9VWUIo56Jy59zqunTFk8gxAP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
