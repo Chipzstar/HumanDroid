@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "269251216245",
+    "firebase_url": "https://pornilarity.firebaseio.com",
+    "project_id": "pornilarity",
+    "storage_bucket": "pornilarity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269251216245:android:21e8ab6c4be13bccc3893c",
+        "android_client_info": {
+          "package_name": "com.pornilarity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269251216245-3vccl2ofb44bcfp18gthf8ajd2c72q2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDftGL1QdhnVCFRftb2ILNqkOqRN79TANA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269251216245-3vccl2ofb44bcfp18gthf8ajd2c72q2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

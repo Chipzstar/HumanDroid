@@ -141,13 +141,11 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     aaptOptions {
-        noCompress 'tflite',
-        noCompress 'lite'
+        noCompress 'tflite'
     }
 }
 
 dependencies {
-    implementation project(':react-native-tensorflow-lite')
     implementation project(':react-native-screens')
     implementation project(':react-native-reanimated')
     implementation project(':react-native-gesture-handler')
@@ -155,7 +153,6 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'org.tensorflow:tensorflow-android:1.7.0'
-    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
     addUnimodulesDependencies()
 }
 
@@ -165,3 +162,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+apply plugin: 'com.google.gms.google-services'

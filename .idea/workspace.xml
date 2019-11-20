@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81236e95-dd91-45dd-8a1b-05b81ec756cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/chiso.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rn-cli.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/labels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/assets/model.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/projectx/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/projectx/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/projectx/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/projectx/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AppComponents/MyImageClassifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppComponents/MyImageClassifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/anna.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/anna.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppComponents/MyImageClassifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppComponents/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppComponents/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/converted_model.tflite" beforeDir="false" afterPath="$PROJECT_DIR$/assets/converted_model.tflite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/labels.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-cli.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/LinksScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/LinksScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,22 +45,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="experimentalPlugin" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\HumanDroid\ProjectX\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\HumanDroid\ProjectX\assets" />
       <recent name="E:\HumanDroid\ProjectX\android\app\src\main\assets" />
       <recent name="E:\HumanDroid\ProjectX\components\AppComponents" />
       <recent name="E:\HumanDroid\ProjectX\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HumanDroid\ProjectX\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +154,25 @@
       <workItem from="1572965028398" duration="827000" />
       <workItem from="1572968315431" duration="6127000" />
       <workItem from="1573041997852" duration="50000" />
-      <workItem from="1573042193071" duration="6098000" />
+      <workItem from="1573042193071" duration="8883000" />
+      <workItem from="1573059605850" duration="1359000" />
+      <workItem from="1573134044476" duration="8000" />
+      <workItem from="1573223754372" duration="1533000" />
+      <workItem from="1573309287405" duration="15000" />
+      <workItem from="1573318077440" duration="53000" />
+      <workItem from="1573318243651" duration="31000" />
+      <workItem from="1573562890892" duration="3000" />
+      <workItem from="1573650985611" duration="598000" />
+      <workItem from="1573664432467" duration="608000" />
+      <workItem from="1573746451778" duration="185000" />
+      <workItem from="1573746668146" duration="625000" />
+      <workItem from="1573827388294" duration="59000" />
+      <workItem from="1573827597119" duration="1582000" />
+      <workItem from="1573923588477" duration="19000" />
+      <workItem from="1574089903158" duration="5129000" />
+      <workItem from="1574175653820" duration="28000" />
+      <workItem from="1574175706240" duration="4836000" />
+      <workItem from="1574259275276" duration="1808000" />
     </task>
     <servers />
   </component>

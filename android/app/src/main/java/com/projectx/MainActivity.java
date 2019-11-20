@@ -1,6 +1,5 @@
 package com.projectx;
 
-import com.reactlibrary.RNTensorflowLitePackage;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;

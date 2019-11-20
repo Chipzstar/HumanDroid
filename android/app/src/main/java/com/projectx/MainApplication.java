@@ -1,9 +1,7 @@
 package com.projectx;
 
 import android.app.Application;
-
 import com.facebook.react.ReactApplication;
-import com.rntensorflowlite.RNTensorflowLitePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -20,6 +18,8 @@ import org.unimodules.core.interfaces.SingletonModule;
 import expo.modules.constants.ConstantsPackage;
 import expo.modules.permissions.PermissionsPackage;
 import expo.modules.filesystem.FileSystemPackage;
+
+import org.tensorflow.lite.Interpreter
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +40,6 @@ public class MainApplication extends Application implements ReactApplication {
 		protected List<ReactPackage> getPackages() {
 			return Arrays.<ReactPackage>asList(
 					new MainReactPackage(),
-					new RNTensorflowLitePackage(),
 					new ReanimatedPackage(),
 					new RNGestureHandlerPackage(),
 					new RNScreensPackage(),

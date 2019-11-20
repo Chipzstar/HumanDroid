@@ -1,12 +1,11 @@
 import React from 'react';
-import {ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet, Text} from 'react-native';
 import {ExpoLinksView} from '@expo/samples';
-import {MyImageClassifier} from '../components/AppComponents';
 
 export default function LinksScreen() {
     return (
         <ScrollView style={styles.container}>
-            <MyImageClassifier/>
+            <Text style={styles.text}> This is the Links Screen!</Text>
         </ScrollView>
     );
 }
@@ -21,4 +20,10 @@ const styles = StyleSheet.create({
         paddingTop: 15,
         backgroundColor: '#fff',
     },
+    text: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 24,
+        fontWeight: 'bold'
+    }
 });
