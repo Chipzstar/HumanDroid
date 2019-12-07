@@ -25,6 +25,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/react" level="application" />
     <orderEntry type="library" name="@types/react-native" level="application" />
-    <orderEntry type="library" name="@types/react-navigation" level="application" />
+    <orderEntry type="library" name="@types/react-native" level="application" />
+    <orderEntry type="library" name="@types/react" level="application" />
   </component>
 </module>

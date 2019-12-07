@@ -4,15 +4,44 @@ import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import {
-    Constants,
-    FileSystem,
-    Permissions,
-} from 'react-native-unimodules';
+import Amplify from 'aws-amplify';
+import awsmobile from './ProjectX/aws-exports';
+import { withAuthenticator } from 'aws-amplify-react-native'; // or 'aws-amplify-react-native';
+
+Amplify.configure(awsmobile);
+
+const signUpConfig = {
+    header: 'Sign Up!',
+    hideAllDefaults: true,
+    defaultCountryCode: '1',
+    signUpFields: [
+        {
+            label: 'Username',
+            key: 'username',
+            required: true,
+            displayOrder: 1,
+            type: 'string'
+        },
+        {
+            label: 'Email',
+            key: 'email',
+            required: true,
+            displayOrder: 2,
+            type: 'string'
+        },
+        {
+            label: 'Password',
+            key: 'password',
+            required: true,
+            displayOrder: 3,
+            type: 'password'
+        } // and other custom attributes
+    ]
+};
 
 import AppNavigator from './navigation/AppNavigator';
 
-export default function App(props) {
+function App(props) {
     const [isLoadingComplete, setLoadingComplete] = useState(false);
 
     if (!isLoadingComplete && !props.skipLoadingScreen) {
@@ -65,3 +94,5 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
 });
+
+export default (App);
