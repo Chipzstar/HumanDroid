@@ -53,14 +53,16 @@ export default class HomeScreen extends Component {
             xhr.open("GET", this.state.uri, true);
             xhr.send(null);
         });
-        const { name, type } = blob._data;
+        const name = this.state.name.concat(".", blob._data.name.split('.').pop());
+        console.log(blob._data);
         const options = {
             level: access,
-            contentType: type
+            contentType: blob._data.type
         };
         try {
             const result = await Storage.put(name, blob, options);
             console.log("IMAGE UPLOADED TO AWS S3:", result);
+            this.setState({success: true});
             return {
                 access,
                 key: result.key
@@ -143,12 +145,29 @@ export default class HomeScreen extends Component {
                 </TouchableOpacity>
             </View>
         );
+        const uploadSuccessView = (
+            <View>
+                <Text style={styles.btnText}>Image Classified!</Text>
+                <TouchableOpacity
+                    style={styles.btnResult}
+                    onPress={() => this.props.navigation.navigate('Results')}
+                >
+                    <Text style={[styles.btnText, {color:'black'}]}>View Your Top 5!</Text>
+                </TouchableOpacity>
+            </View>
+        );
 
         return (
             <LinearGradient
                 colors={["#5271ff", "#192f6a"]}
-                style={styles.container} end={} locations={} start={}>
-                {image ? confirmImageView : addImageView}
+                style={styles.container}>
+                {this.state.success
+                    ? uploadSuccessView
+                    : (image
+                        ? confirmImageView
+                        : addImageView
+                    )
+                }
             </LinearGradient>
         );
     }
@@ -189,6 +208,12 @@ const styles = StyleSheet.create({
     },
     btnConfirm: {
         backgroundColor: 'green',
+        alignItems: 'center',
+        borderRadius: 25,
+        padding: 10,
+    },
+    btnResult: {
+        backgroundColor: 'red',
         alignItems: 'center',
         borderRadius: 25,
         padding: 10,
