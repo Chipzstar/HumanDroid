@@ -6,7 +6,6 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Amplify from 'aws-amplify';
 import awsmobile from './ProjectX/aws-exports';
-import { withAuthenticator } from 'aws-amplify-react-native'; // or 'aws-amplify-react-native';
 
 Amplify.configure(awsmobile);
 
