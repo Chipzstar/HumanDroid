@@ -9,7 +9,7 @@ export default class ResultsScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            loading: true,
+            loading: false,
             file: null
         };
     }
@@ -20,16 +20,21 @@ export default class ResultsScreen extends React.Component {
             level: 'public',
             region: 'eu-west-2',
         });
-        Storage.get('results.txt', {expires: 60})
-            .then(result => {
-                console.log(result);
-                this.setState({file: result});
-                this.hideLoading();
-            })
-            .catch(err => console.log('Error fetching results file: ', err));
+        fetch('https://k4whgc6v7g.execute-api.eu-west-2.amazonaws.com/production/pornilarity/classify', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                firstParam: 'Hello World',
+            }),
+        }).then((response) => console.log(response))
+            .catch((error) => console.error(error));
     };
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+
     }
 
     componentWillUnmount() {
@@ -52,7 +57,10 @@ export default class ResultsScreen extends React.Component {
         );
         const resultsView = (
             <View>
-                <Text>Results Screen</Text>
+                <Text style={styles.header}>Results Screen</Text>
+                <View>
+
+                </View>
             </View>
         );
         return (

@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/pornilarity",
+            "lambdaFunction": "pornilarityLambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "pornilarityAPI",
+    "apiName": "pornilarityAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "pornilarityLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-projectx-production-170933-authRole",
+        "unAuthRoleName": "amplify-projectx-production-170933-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "pornilarityLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

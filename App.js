@@ -4,7 +4,7 @@ import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import Amplify from 'aws-amplify';
+import Amplify, { API } from 'aws-amplify';
 import awsmobile from './ProjectX/aws-exports';
 
 Amplify.configure(awsmobile);

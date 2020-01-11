@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81236e95-dd91-45dd-8a1b-05b81ec756cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/api-params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/pornilarityAPI-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/function-parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/pornilarityLambda-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/event.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/pornilarityStorage/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/storage/pornilarityStorage/parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/MainTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/MainTabNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/predictions/pornilarityImageClassifier/parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/predictions/pornilarityImageClassifier/pornilarityImageClassifier-template.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/ResultsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ResultsScreen.js" afterDir="false" />
     </list>
@@ -56,6 +67,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -69,7 +81,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="aws" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -205,6 +217,15 @@
       <workItem from="1576784731898" duration="2043000" />
       <workItem from="1577549265286" duration="328000" />
       <workItem from="1577549701461" duration="94000" />
+      <workItem from="1578586558850" duration="3407000" />
+      <workItem from="1578591180886" duration="1362000" />
+      <workItem from="1578660655032" duration="2030000" />
+      <workItem from="1578669650471" duration="198000" />
+      <workItem from="1578674315641" duration="614000" />
+      <workItem from="1578675191491" duration="1368000" />
+      <workItem from="1578676621604" duration="1449000" />
+      <workItem from="1578699337595" duration="255000" />
+      <workItem from="1578699717367" duration="1358000" />
     </task>
     <servers />
   </component>
@@ -249,6 +270,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="0" y="93" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1575152874126" />
+    <state x="552" y="259" key="#Scopes" timestamp="1578700394808">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="552" y="259" key="#Scopes/0.0.1920.1200@0.0.1920.1200" timestamp="1578700394808" />
     <state x="539" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575073971823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -278,10 +303,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="349" y="175" key="IDE.errors.dialog/0.0.1536.864@0.0.1536.864" timestamp="1575152713218" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1576415082874">
+    <state x="277" y="74" key="SettingsEditor" timestamp="1578676844924">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1576415082874" />
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1578676844924" />
     <state x="346" y="93" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575754910058" />
     <state x="524" y="276" key="cloudConfig.PluginsDialog" timestamp="1575112943831">
       <screen x="0" y="0" width="1536" height="864" />
@@ -295,9 +320,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="452" y="13" width="631" height="837" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1576625469583" />
-    <state x="41" y="200" key="run.anything.popup" timestamp="1576614926823">
+    <state x="41" y="200" key="run.anything.popup" timestamp="1578668318651">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="41" y="200" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1576614926823" />
+    <state x="41" y="200" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1578668318651" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1578700843767">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1578700843767" />
   </component>
 </project>

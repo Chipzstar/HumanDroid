@@ -72,22 +72,6 @@ export default class HomeScreen extends Component {
         }
     };
 
-    uploadToStorage = async (pathToImageFile) => {
-        let key = this.state.name;
-        try {
-            const response = await fetch(pathToImageFile);
-            const blob = await response.blob();
-
-            Storage.put(key, blob, {
-                contentType: 'image/jpeg',
-            })
-                .then(result => resolve(result))
-                .catch(err => console.error({error: err, object: blob}));
-        } catch (err) {
-            console.log(err)
-        }
-    };
-
     selectPicture = async () => {
         const options = {
             mediaTypes: ImagePicker.MediaTypeOptions.Images,

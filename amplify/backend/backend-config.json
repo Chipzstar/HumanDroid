@@ -12,12 +12,37 @@
 			"providerPlugin": "awscloudformation"
 		}
 	},
-	"predictions": {
-		"pornilarityImageClassifier": {
+	"predictions": {},
+	"function": {
+		"pornilarityLambda": {
+			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
-			"service": "Rekognition",
-			"dependsOn": [],
-			"identifyType": "identifyLabels"
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "pornilarityStorage",
+					"attributes": [
+						"BucketName"
+					]
+				}
+			]
+		}
+	},
+	"api": {
+		"pornilarityAPI": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "pornilarityLambda",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
 		}
 	}
 }
