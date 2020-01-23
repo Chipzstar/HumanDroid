@@ -1,36 +1,51 @@
 import React from 'react';
-import {Text, View, ActivityIndicator, StyleSheet} from 'react-native';
-import {Storage} from "aws-amplify";
+import {Text, View, ActivityIndicator, FlatList, StyleSheet, ScrollView} from 'react-native';
+import {ListItem, List, Icon, Right, Left} from "native-base";
+import {Storage, API} from "aws-amplify";
 import {LinearGradient} from "expo-linear-gradient";
+import aws_exports from "../aws-exports";
 
 export default class ResultsScreen extends React.Component {
-    static navigationOptions = {title: null};
 
     constructor(props) {
         super(props);
         this.state = {
             loading: false,
-            file: null
+            file: null,
+            path: '/pornilarity/classify',
+            endpointName: "pornilarity-v1-endpoint",
+            predictions: []
         };
     }
 
+    classifier = async (path) => {
+        try {
+            let {predictions} = await API.post(aws_exports.aws_cloud_logic_custom[0].name, path,
+                {
+                    body: {
+                        endpointName: this.state.endpointName,
+                        endpointRegion: aws_exports.aws_cloud_logic_custom[0].region,
+                    },
+                }
+            );
+            return predictions;
+        } catch (e) {
+            console.log('An error occurred: ', e);
+        }
+    };
+
     componentDidMount() {
+        this.showLoading();
         Storage.configure({
             bucket: 'pornilarity-bucket170933-production',
             level: 'public',
             region: 'eu-west-2',
         });
-        fetch('https://k4whgc6v7g.execute-api.eu-west-2.amazonaws.com/production/pornilarity/classify', {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                firstParam: 'Hello World',
-            }),
-        }).then((response) => console.log(response))
-            .catch((error) => console.error(error));
+        this.classifier(this.state.path).then(response => {
+            this.setState({predictions: Array.from(response)});
+            console.log(this.state.predictions);
+            this.hideLoading();
+        });
     };
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -50,35 +65,90 @@ export default class ResultsScreen extends React.Component {
     }
 
     render() {
+        let results = this.state.predictions;
         const loadingView = (
             <View style={styles.loading}>
                 <ActivityIndicator size='large'/>
             </View>
         );
-        const resultsView = (
+        const resultsView1 = (
             <View>
                 <Text style={styles.header}>Results Screen</Text>
-                <View>
-
-                </View>
+                <FlatList
+                    keyExtractor={(item) => results.indexOf(item).toString()}
+                    data={results}
+                    renderItem={({ item }) => (
+                        <Text style={styles.item}>{item}</Text>
+                    )}
+                />
+            </View>
+        );
+        const resultsView2 = (
+            <View>
+                <Text style={styles.header}>Results Screen</Text>
+                <List>
+                    <FlatList
+                        keyExtractor={(item) => results.indexOf(item).toString()}
+                        data={results}
+                        renderItem={({item}) => (
+                            <ListItem>
+                                <Left>
+                                    <Text style={{color: 'white'}}>{item}</Text>
+                                </Left>
+                                <Right>
+                                    <Icon name="arrow-forward"/>
+                                </Right>
+                            </ListItem>
+                        )}
+                    />
+                </List>
             </View>
         );
         return (
             <LinearGradient
                 colors={["#5271ff", "#192f6a"]}
                 style={styles.container}>
-                {this.state.loading ? loadingView : resultsView}
+                {this.state.loading ? loadingView : resultsView2}
             </LinearGradient>
 
         );
+        /*<List>
+            <FlatList
+                data={this.state.predictions}
+                renderItem={({item}) => (
+                    <ListItem>
+                        <Left>
+                            <Text>{item}</Text>
+                        </Left>
+                        <Right>
+                            <Icon name="arrow-forward"/>
+                        </Right>
+                    </ListItem>
+                )}
+            />
+        </List>*/
     }
+
 }
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         //flexDirection: 'column',
-        justifyContent: 'center',
         alignItems: 'center'
+    },
+    item: {
+        flex: 1,
+        marginHorizontal: 10,
+        marginTop: 24,
+        padding: 30,
+        backgroundColor: 'darkgreen',
+        color: 'white',
+        fontSize: 24,
+    },
+    header: {
+        fontSize: 36,
+        color: 'white',
+        fontWeight: 'bold'
     },
     loading: {
         position: 'absolute',

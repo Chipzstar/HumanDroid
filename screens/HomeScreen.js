@@ -59,6 +59,7 @@ export default class HomeScreen extends Component {
             level: access,
             contentType: blob._data.type
         };
+        console.log(options);
         try {
             const result = await Storage.put(name, blob, options);
             console.log("IMAGE UPLOADED TO AWS S3:", result);

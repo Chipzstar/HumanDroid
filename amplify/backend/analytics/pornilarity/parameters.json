@@ -1,0 +1,20 @@
+{
+    "appName": "pornilarity",
+    "roleName": "pinpointLambdaRoleb6a1da01",
+    "cloudWatchPolicyName": "cloudWatchPolicyb6a1da01",
+    "pinpointPolicyName": "pinpointPolicyb6a1da01",
+    "authPolicyName": "pinpoint_amplify_b6a1da01",
+    "unauthPolicyName": "pinpoint_amplify_b6a1da01",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

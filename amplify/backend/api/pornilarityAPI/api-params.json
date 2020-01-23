@@ -4,7 +4,18 @@
             "name": "/pornilarity",
             "lambdaFunction": "pornilarityLambda",
             "privacy": {
-                "open": true
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET"
+                ]
             }
         }
     ],
@@ -16,8 +27,8 @@
         }
     ],
     "privacy": {
-        "auth": 0,
-        "unauth": 0,
+        "auth": 1,
+        "unauth": 1,
         "authRoleName": "amplify-projectx-production-170933-authRole",
         "unAuthRoleName": "amplify-projectx-production-170933-unauthRole"
     },
@@ -30,5 +41,6 @@
                 "Arn"
             ]
         }
-    ]
+    ],
+    "uuid": "a25d6eb4"
 }

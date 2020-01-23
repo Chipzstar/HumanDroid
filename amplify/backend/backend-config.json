@@ -44,5 +44,11 @@
 				}
 			]
 		}
+	},
+	"analytics": {
+		"pornilarity": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
 	}
 }

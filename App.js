@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Amplify, { API } from 'aws-amplify';
-import awsmobile from './ProjectX/aws-exports';
+import awsmobile from './aws-exports';
 
 Amplify.configure(awsmobile);
 

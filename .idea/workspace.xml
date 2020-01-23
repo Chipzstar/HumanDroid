@@ -2,23 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81236e95-dd91-45dd-8a1b-05b81ec756cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/api-params.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/parameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/pornilarityAPI-cloudformation-template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/function-parameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/pornilarityLambda-cloudformation-template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/event.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/pornilarityLambda/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/analytics/pornilarity/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/analytics/pornilarity/pinpoint-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/AntDesign.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Entypo.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/EvilIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Feather.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Fontisto.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Foundation.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/MaterialIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Octicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Roboto.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Roboto_medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/SimpleLineIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Zocial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/rubicon-icon-font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metro.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/App-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/__snapshots__/App-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/.config/project-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/.config/project-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/api-params.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/api-params.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/pornilarityAPI-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/pornilarityAPI-cloudformation-template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/auth/projectxba4fc49f/projectxba4fc49f-cloudformation-template.yml" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/auth/projectxba4fc49f/projectxba4fc49f-cloudformation-template.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/predictions/pornilarityImageClassifier/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/predictions/pornilarityImageClassifier/pornilarityImageClassifier-template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/pornilarityStorage/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/storage/pornilarityStorage/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/frozen_model.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/ProjectX.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ProjectX.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/ProjectX/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ProjectX/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/ResultsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ResultsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,12 +110,12 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HumanDroid\ProjectX\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\HumanDroid\ProjectX\components\AppComponents" />
       <recent name="E:\HumanDroid\ProjectX\components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\HumanDroid\ProjectX\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -148,6 +172,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -225,12 +250,33 @@
       <workItem from="1578675191491" duration="1368000" />
       <workItem from="1578676621604" duration="1449000" />
       <workItem from="1578699337595" duration="255000" />
-      <workItem from="1578699717367" duration="1358000" />
+      <workItem from="1578699717367" duration="8723000" />
+      <workItem from="1578783254908" duration="582000" />
+      <workItem from="1578923252408" duration="1012000" />
+      <workItem from="1579443907906" duration="672000" />
+      <workItem from="1579447876223" duration="516000" />
+      <workItem from="1579448490685" duration="489000" />
+      <workItem from="1579476410738" duration="2049000" />
+      <workItem from="1579520816371" duration="2008000" />
+      <workItem from="1579533494740" duration="5494000" />
+      <workItem from="1579546909609" duration="529000" />
+      <workItem from="1579547590368" duration="2309000" />
+      <workItem from="1579555311913" duration="592000" />
+      <workItem from="1579560295120" duration="885000" />
+      <workItem from="1579563690334" duration="4736000" />
+      <workItem from="1579609462819" duration="8276000" />
+      <workItem from="1579729191241" duration="8409000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/aws-sdk/scripts/services-table-generator.js" />
+        <option value="$PROJECT_DIR$/node_modules/aws-sdk/scripts/services-table-generator.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -278,36 +324,48 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="539" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1575073971823" />
-    <state x="449" y="160" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577549283495">
+    <state x="449" y="160" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579608752929">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="449" y="160" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1577549283495" />
+    <state x="449" y="160" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1579608752929" />
     <state x="561" y="200" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575727373844" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1575126469965">
+    <state x="499" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579624835820">
       <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1579624835820" />
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1579443983026">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1579443983026" />
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1578708511670">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1575126469965" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1575126469965">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1578708511670" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1578708511669">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1575126469965" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1575126469965">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1578708511669" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1578708511669">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1575126469965" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1575126469965">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1578708511669" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1578708511669">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1575126469965" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1578708511669" />
     <state x="349" y="175" key="IDE.errors.dialog" timestamp="1575152713218">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="349" y="175" key="IDE.errors.dialog/0.0.1536.864@0.0.1536.864" timestamp="1575152713218" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1578676844924">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="346" y="93" key="SettingsEditor" timestamp="1579448009171">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1578676844924" />
-    <state x="346" y="93" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575754910058" />
+    <state x="346" y="93" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579448009171" />
     <state x="524" y="276" key="cloudConfig.PluginsDialog" timestamp="1575112943831">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -324,9 +382,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="41" y="200" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1578668318651" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1578700843767">
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1578702241058">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1578700843767" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1578702241058" />
   </component>
 </project>
