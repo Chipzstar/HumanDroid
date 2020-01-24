@@ -2,47 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81236e95-dd91-45dd-8a1b-05b81ec756cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/amplify/backend/analytics/pornilarity/parameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/analytics/pornilarity/pinpoint-cloudformation-template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/AntDesign.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Entypo.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/EvilIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Feather.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Fontisto.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Foundation.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Ionicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/MaterialIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Octicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Roboto.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Roboto_medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/SimpleLineIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/Zocial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/fonts/rubicon-icon-font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metro.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/App-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/__snapshots__/App-test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/.config/project-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/.config/project-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/api-params.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/api-params.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/pornilarityAPI-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/pornilarityAPI/pornilarityAPI-cloudformation-template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/auth/projectxba4fc49f/projectxba4fc49f-cloudformation-template.yml" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/auth/projectxba4fc49f/projectxba4fc49f-cloudformation-template.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/pornilarityStorage/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/storage/pornilarityStorage/parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/frozen_model.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/ProjectX.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ProjectX.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/ProjectX/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ProjectX/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/MainTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/MainTabNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/ResultsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ResultsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,6 +229,13 @@
       <workItem from="1579563690334" duration="4736000" />
       <workItem from="1579609462819" duration="8276000" />
       <workItem from="1579729191241" duration="8409000" />
+      <workItem from="1579775585208" duration="5017000" />
+      <workItem from="1579795098020" duration="6034000" />
+      <workItem from="1579802253673" duration="11490000" />
+      <workItem from="1579819776761" duration="5650000" />
+      <workItem from="1579874180142" duration="3378000" />
+      <workItem from="1579878499751" duration="6093000" />
+      <workItem from="1579886920988" duration="264000" />
     </task>
     <servers />
   </component>
@@ -273,7 +243,6 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/aws-sdk/scripts/services-table-generator.js" />
         <option value="$PROJECT_DIR$/node_modules/aws-sdk/scripts/services-table-generator.js" />
       </list>
     </option>
@@ -374,6 +343,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="715" y="384" key="cloudConfig.SelfSettingsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575727445482" />
+    <state x="93" y="93" width="1350" height="678" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1579882884315">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.864@0.0.1536.864" timestamp="1579882884315" />
     <state x="452" y="13" width="631" height="837" key="find.popup" timestamp="1576625469583">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -382,9 +355,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="41" y="200" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1578668318651" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1578702241058">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="498" y="191" width="670" height="489" key="search.everywhere.popup" timestamp="1579813114965">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="498" y="191" width="670" height="489" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1579813114965" />
     <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1578702241058" />
   </component>
 </project>

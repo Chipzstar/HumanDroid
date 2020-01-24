@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, ActivityIndicator, FlatList, StyleSheet, ScrollView} from 'react-native';
-import {ListItem, List, Icon, Right, Left} from "native-base";
+import {ListItem, List, Icon, Right, Left, Content, Container} from "native-base";
 import {Storage, API} from "aws-amplify";
 import {LinearGradient} from "expo-linear-gradient";
 import aws_exports from "../aws-exports";
@@ -10,41 +10,41 @@ export default class ResultsScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            S3ImageKey: String(this.props.navigation.getParam('S3ImageKey')),
             loading: false,
             file: null,
+            access: 'public',
             path: '/pornilarity/classify',
             endpointName: "pornilarity-v1-endpoint",
             predictions: []
         };
     }
 
-    classifier = async (path) => {
-        try {
-            let {predictions} = await API.post(aws_exports.aws_cloud_logic_custom[0].name, path,
-                {
-                    body: {
-                        endpointName: this.state.endpointName,
-                        endpointRegion: aws_exports.aws_cloud_logic_custom[0].region,
-                    },
-                }
-            );
-            return predictions;
-        } catch (e) {
-            console.log('An error occurred: ', e);
-        }
+    classifier = async () => {
+        let path = this.state.path;
+        let payload = {
+            body: {
+                key: this.state.S3ImageKey,
+                endpointName: this.state.endpointName,
+                endpointRegion: aws_exports.aws_cloud_logic_custom[0].region,
+            }, // replace this with attributes you need
+            headers: {
+                "Content-Type": 'application/json'
+            } // OPTIONAL
+        };
+        let {Predictions} = await API.post(aws_exports.aws_cloud_logic_custom[0].name, path, payload);
+        return Predictions;
     };
 
     componentDidMount() {
         this.showLoading();
-        Storage.configure({
-            bucket: 'pornilarity-bucket170933-production',
-            level: 'public',
-            region: 'eu-west-2',
-        });
-        this.classifier(this.state.path).then(response => {
-            this.setState({predictions: Array.from(response)});
-            console.log(this.state.predictions);
-            this.hideLoading();
+        this.classifier(this.state.path)
+            .then(response => {
+                console.log(response);
+                this.setState({predictions: Array.from(response)});
+                this.hideLoading();
+            }).catch(error => {
+            console.log(error);
         });
     };
 
@@ -72,12 +72,12 @@ export default class ResultsScreen extends React.Component {
             </View>
         );
         const resultsView1 = (
-            <View>
-                <Text style={styles.header}>Results Screen</Text>
+            <View style={styles.content}>
+                <Text style={styles.header}>Top 5 Results</Text>
                 <FlatList
                     keyExtractor={(item) => results.indexOf(item).toString()}
                     data={results}
-                    renderItem={({ item }) => (
+                    renderItem={({item}) => (
                         <Text style={styles.item}>{item}</Text>
                     )}
                 />
@@ -108,28 +108,17 @@ export default class ResultsScreen extends React.Component {
             <LinearGradient
                 colors={["#5271ff", "#192f6a"]}
                 style={styles.container}>
-                {this.state.loading ? loadingView : resultsView2}
+                {this.state.loading ? loadingView : resultsView1}
             </LinearGradient>
-
         );
-        /*<List>
-            <FlatList
-                data={this.state.predictions}
-                renderItem={({item}) => (
-                    <ListItem>
-                        <Left>
-                            <Text>{item}</Text>
-                        </Left>
-                        <Right>
-                            <Icon name="arrow-forward"/>
-                        </Right>
-                    </ListItem>
-                )}
-            />
-        </List>*/
     }
 
 }
+
+ResultsScreen.navigationOptions = {
+    header: null,
+};
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -144,6 +133,10 @@ const styles = StyleSheet.create({
         backgroundColor: 'darkgreen',
         color: 'white',
         fontSize: 24,
+    },
+    content: {
+        flex: 1,
+        padding: 40
     },
     header: {
         fontSize: 36,

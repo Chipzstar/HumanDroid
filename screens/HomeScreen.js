@@ -5,6 +5,7 @@ import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-permissions';
 import {Constants} from 'react-native-unimodules';
 import {Storage} from 'aws-amplify';
+import shorthash from 'shorthash';
 
 //components
 
@@ -13,20 +14,21 @@ import UploadButton from '../assets/images/UploadButton.png'
 
 export default class HomeScreen extends Component {
 
+    state = {
+        uri: null,
+        name: '',
+        access: 'public',
+        type: 'image/jpg',
+        success: false,
+    };
+
     componentDidMount() {
         this.getPermissionAsync().then(res => console.log('Permission granted!'));
         Storage.configure({
             bucket: 'pornilarity-bucket170933-production',
-            level: 'public',
+            level: this.state.access,
             region: 'eu-west-2',
         })
-    };
-
-    state = {
-        uri: null,
-        name: '',
-        type: 'image/jpg',
-        success: false,
     };
 
     getPermissionAsync = async () => {
@@ -39,8 +41,6 @@ export default class HomeScreen extends Component {
     };
 
     storeFileInS3 = async () => {
-        //let awsKey = null;
-        let access = 'public';
         const blob = await new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
             xhr.onload = function() {
@@ -53,19 +53,25 @@ export default class HomeScreen extends Component {
             xhr.open("GET", this.state.uri, true);
             xhr.send(null);
         });
-        const name = this.state.name.concat(".", blob._data.name.split('.').pop());
+        if (!this.state.name) {
+            this.setState({name: shorthash.unique(this.state.uri).concat(".", blob._data.name.split('.').pop())});
+        } else {
+            this.setState({name: this.state.name.concat(".", blob._data.name.split('.').pop())});
+        }
+        console.log(this.state.name);
         console.log(blob._data);
         const options = {
-            level: access,
+            level: this.state.access,
             contentType: blob._data.type
         };
         console.log(options);
         try {
-            const result = await Storage.put(name, blob, options);
+            const result = await Storage.put(this.state.name, blob, options);
             console.log("IMAGE UPLOADED TO AWS S3:", result);
             this.setState({success: true});
+            this.setState({key: `${this.state.access}/${result.key}`});
             return {
-                access,
+                access: this.state.access,
                 key: result.key
             };
         } catch (err) {
@@ -89,6 +95,7 @@ export default class HomeScreen extends Component {
 
     render() {
         let image = this.state.uri;
+        let key = this.state.key;
         const addImageView = (
             <View>
                 <TouchableOpacity
@@ -135,7 +142,7 @@ export default class HomeScreen extends Component {
                 <Text style={styles.btnText}>Image Classified!</Text>
                 <TouchableOpacity
                     style={styles.btnResult}
-                    onPress={() => this.props.navigation.navigate('Results')}
+                    onPress={() => this.props.navigation.navigate('Results', {S3ImageKey: key})}
                 >
                     <Text style={[styles.btnText, {color:'black'}]}>View Your Top 5!</Text>
                 </TouchableOpacity>
